@@ -143,11 +143,11 @@ function debounce(func, wait, immediate) {
 
 		if ( 'right' === direction ) {
 
-			_.initial = 90;
+			_.initial = 30;
 
 		} else if ( 'left' === direction ) {
 
-			_.initial = -90;
+			_.initial = -30;
 
 		}
 
@@ -169,9 +169,9 @@ function debounce(func, wait, immediate) {
 
 		// Return as a series of properties to apply to transform
 		return {
-			'-webkit-transform': 'translateX(' + currentAmount + 'px)',
-			'-ms-transform': 'translateX(' + currentAmount + 'px)',
-			transform: 'translateX(' + currentAmount + 'px)'
+			'-webkit-transform': 'translateX(' + currentAmount + '%)',
+			'-ms-transform': 'translateX(' + currentAmount + '%)',
+			transform: 'translateX(' + currentAmount + '%)'
 		};
 	};
 
