@@ -11,6 +11,7 @@
 
 # 	Ignore built Sass/CSS files
 .sass-cache
+*.map
 
 # 	Ignore WordPress specific files
 wp-config.php
