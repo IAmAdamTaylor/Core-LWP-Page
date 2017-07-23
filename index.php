@@ -27,10 +27,10 @@
 	<div class="u-row">
 		<div class="u-container u-container--wide">
 
-			<img class="o-logo" src="public/images/lwp-logo.png" alt="Lynch Wood Park, Peterborough" width="" height="">
+			<img class="o-logo" src="public/images/lwp-logo.png" alt="Lynch Wood Park, Peterborough" width="324" height="171">
 
 			<a href="http://www.fi-rem.com/">
-				<img class="o-logo o-logo--right" src="public/images/fi-real-estate-logo.png" alt="Asset managed by FI Real Estate Management" width="" height="">
+				<img class="o-logo o-logo--right" src="public/images/fi-real-estate-logo.png" alt="Asset managed by FI Real Estate Management" width="324" height="171">
 			</a>
 		
 		</div>
@@ -56,15 +56,15 @@
 
 		<div class="c-carousel" data-carousel>
 			<div class="c-carousel__slide">
-				<img class="u-block-image" src="public/images/carousel/1.jpg" alt="A view of Lynch Wood Park" width="" height="">
+				<img class="u-block-image" src="public/images/carousel/1.jpg" alt="A view of Lynch Wood Park" width="1706" height="762">
 			</div>
 
 			<div class="c-carousel__slide">
-				<img class="u-block-image" src="public/images/carousel/2.jpg" alt="A view of Lynch Wood Park" width="" height="">
+				<img class="u-block-image" src="public/images/carousel/2.jpg" alt="A view of Lynch Wood Park" width="1706" height="762">
 			</div>
 
 			<div class="c-carousel__slide">
-				<img class="u-block-image" src="public/images/carousel/3.jpg" alt="A view of Lynch Wood Park" width="" height="">
+				<img class="u-block-image" src="public/images/carousel/3.jpg" alt="A view of Lynch Wood Park" width="1706" height="762">
 			</div>
 		</div>
 		
@@ -86,7 +86,7 @@
 						
 					</header>
 
-					<img class="u-block-image" src="public/images/main.jpg" alt="A view of Lynch Wood Park" width="" height="">
+					<img class="u-block-image" src="public/images/main.jpg" alt="A view of Lynch Wood Park" width="1262" height="638">
 
 					<p class="o-article__left-text u-text-emphasis">Lynch Wood Park offers variable floorplates suitable for a range of occupiers.</p>
 
@@ -115,7 +115,7 @@
 
 						<div class="u-column u-column--1-2">
 							
-							<img class="u-block-image u-negative-spacing-top" src="public/images/map.png" alt="A map of the location of Lynch Wood Park" width="" height="">
+							<img class="u-block-image u-negative-spacing-top" src="public/images/map.png" alt="A map of the location of Lynch Wood Park" width="674" height="900">
 
 						</div>
 
@@ -125,7 +125,7 @@
 			</section>
 
 			<div class="u-row">
-				<img class="u-block-image" src="public/images/banner.jpg" alt="A view of Lynch Wood Park" width="" height="">
+				<img class="u-block-image" src="public/images/banner.jpg" alt="A view of Lynch Wood Park" width="1706" height="763">
 			</div>
 
 			<section class="o-section o-section--dark o-section--pattern">
@@ -140,7 +140,7 @@
 						
 						<div class="u-column u-column--1-2">
 
-							<img class="u-block-image-max" src="public/images/savills-logo.png" alt="Savills Logo" width="" height="">
+							<img class="u-block-image-max" src="public/images/savills-logo.png" alt="Savills Logo" width="155" height="155">
 
 							<p>William Rose</p>
 							<p class="u-no-spacing">01733 344414</p>
@@ -149,7 +149,7 @@
 
 						<div class="u-column u-column--1-2">
 
-							<img class="u-block-image-max" src="public/images/cushman-wakefield-logo.png" alt="Cushman &amp; Wakefield Logo" width="" height="">
+							<img class="u-block-image-max" src="public/images/cushman-wakefield-logo.png" alt="Cushman &amp; Wakefield Logo" width="309" height="155">
 
 							<p>Andrew Berry</p>
 							<p class="u-no-spacing">0121 200 2050</p>
