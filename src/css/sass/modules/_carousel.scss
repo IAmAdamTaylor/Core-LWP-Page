@@ -2,6 +2,10 @@
 
 .c-carousel {
 	margin-top: 0;
+
+	@include respond( em(670px) ) {
+		display: none;
+	}
 }
 
 .c-carousel__slide {

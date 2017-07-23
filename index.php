@@ -105,15 +105,15 @@
 
 					<div class="u-columns">
 					
-						<div class="u-column u-column--1-2" data-animate="slideInLeft">
+						<div class="u-column u-column--1-2 u-column--full@900">
 							
-							<p class="u-text-emphasis u-spacing-top">Lynch Wood Park is ideally located in the heart of the UK, three miles west of Peterborough Town Centre.</p>
-							<p>With excellent connectivity via road and rail, as well as four international airports within an hour and a half.</p>
-							<p>One of the fastest growing cities in the UK, Peterborough is also one of the most cost-effective business locations, ideal for start-ups, SMEs and leading companies alike.</p>
+							<p class="u-text-emphasis u-spacing-top" data-animate="slideInLeft">Lynch Wood Park is ideally located in the heart of the UK, three miles west of Peterborough Town Centre.</p>
+							<p data-animate="slideInLeft">With excellent connectivity via road and rail, as well as four international airports within an hour and a half.</p>
+							<p data-animate="slideInLeft">One of the fastest growing cities in the UK, Peterborough is also one of the most cost-effective business locations, ideal for start-ups, SMEs and leading companies alike.</p>
 							
 						</div>	
 
-						<div class="u-column u-column--1-2">
+						<div class="u-column u-column--1-2 u-hide@900">
 							
 							<img class="u-block-image u-negative-spacing-top" src="public/images/map.png" alt="A map of the location of Lynch Wood Park" width="674" height="900" data-animate="fadeIn">
 
@@ -124,7 +124,7 @@
 				</div>				
 			</section>
 
-			<div class="u-row">
+			<div class="u-row u-no-spacing">
 				<img class="u-block-image" src="public/images/banner.jpg" alt="A view of Lynch Wood Park" width="1706" height="763" data-animate="fadeIn">
 			</div>
 
@@ -138,7 +138,7 @@
 
 					<div class="u-columns">
 						
-						<div class="u-column u-column--1-2" data-animate="slideInLeft">
+						<div class="u-column u-column--1-2 u-column--full@520 c-contact-item">
 
 							<img class="u-block-image-max" src="public/images/savills-logo.png" alt="Savills Logo" width="155" height="155">
 
@@ -147,7 +147,7 @@
 							
 						</div>
 
-						<div class="u-column u-column--1-2" data-animate="slideInRight">
+						<div class="u-column u-column--1-2 u-column--full@520 c-contact-item">
 
 							<img class="u-block-image-max" src="public/images/cushman-wakefield-logo.png" alt="Cushman &amp; Wakefield Logo" width="309" height="155">
 

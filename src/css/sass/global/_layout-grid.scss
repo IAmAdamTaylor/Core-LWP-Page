@@ -40,3 +40,15 @@
 
 	}
 }
+
+.u-column--full\@900 {
+	@include respond( em(900px) ) {
+		width: 100%;
+	}
+}
+
+.u-column--full\@520 {
+	@include respond( em(520px) ) {
+		width: 100%;
+	}
+}

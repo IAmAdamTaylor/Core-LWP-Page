@@ -9,12 +9,8 @@
 
 .o-title--primary {	
 	font-size: 2.8em;
-}
 
-.o-title--secondary {
-	font-size: 2em;
-}
-
-.o-title--tertiary {
-	font-size: 1.4em;
+	@include respond( em(500px) ) {
+		font-size: 2em;
+	}
 }

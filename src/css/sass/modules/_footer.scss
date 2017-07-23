@@ -5,6 +5,10 @@
 	margin-top: 0;
 
 	font-size: .8em;
+
+	@include respond( em(400px) ) {
+		text-align: center;
+	}	
 }
 
 .c-footer__left,
@@ -25,5 +29,18 @@
 			border-left: 1px solid #ccc;
 			padding-left: spacing();
 		}
+	}
+}
+
+.c-footer__left,
+.c-footer__right {
+	@include respond( em(400px) ) {
+		width: 100%;
+	}
+}	
+
+.c-footer__right {
+	@include respond( em(400px) ) {
+		margin-top: spacing();
 	}
 }

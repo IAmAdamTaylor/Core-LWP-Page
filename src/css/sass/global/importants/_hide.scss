@@ -4,3 +4,9 @@
 .u-hide {
 	display: none !important;
 }
+
+.u-hide\@900 {
+	@include respond( em(900px) ) {
+		display: none !important;
+	}
+}

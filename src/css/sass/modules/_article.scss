@@ -23,3 +23,13 @@
 	padding-right: spacing(6);
 	padding-left: spacing(6);
 }
+
+.o-article__left-text,
+.o-article__right-text {
+	@include respond( em(830px) ) {
+		width: 100%;
+
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

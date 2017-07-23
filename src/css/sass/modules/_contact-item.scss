@@ -1,0 +1,37 @@
+// Contact items
+
+.c-contact-item {
+	@include respond( em(750px) ) {
+
+		img {
+			display: block;
+			width: auto;
+			height: auto;
+			max-height: 100px;
+		}
+	}
+	
+	@include respond( em(520px) ) {
+
+		img {
+			float: left;
+
+			max-width: 140px;
+
+			margin-right: spacing(3);
+
+			&[src*="savills"] {
+				margin-right: 70px;
+			}
+		}
+
+		p {
+			margin-top: 0;
+
+		}
+		img[src*="cushman"] + p {
+			margin-top: 20px;
+		}
+
+	}
+}

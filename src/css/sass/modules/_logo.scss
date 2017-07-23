@@ -9,6 +9,10 @@
 	max-height: 100px;
 
 	margin: spacing(2) 0;
+
+	@include respond( em(440px) ) {
+		max-height: 70px;
+	}
 }
 
 .o-logo--right {
