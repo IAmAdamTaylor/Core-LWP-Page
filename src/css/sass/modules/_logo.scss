@@ -1,0 +1,16 @@
+// Logos
+
+.o-logo {
+	float: left;
+
+	display: block;
+	width: auto;
+	height: auto;
+	max-height: 100px;
+
+	margin: spacing(2) 0;
+}
+
+.o-logo--right {
+	float: right;
+}
