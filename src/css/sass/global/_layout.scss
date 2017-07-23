@@ -12,8 +12,9 @@ body {
 	margin-bottom: 0;
 }
 
+// Place margin between sibling elements only
 * + * {
-	margin-top: 1.5em;
+	margin-top: $default-spacing;
 }
 
 h1, 
@@ -23,11 +24,11 @@ h4,
 h5, 
 h6 {
 	& + p {
-		margin-top: .5em;
+		margin-top: spacing();
 	}
 }
 
-.container {
+.u-container {
 	@extend %clearfix;
 	
 	width: 95%;
@@ -38,7 +39,7 @@ h6 {
 }
 
 %row,
-.row {
+.u-row {
 	@extend %clearfix;
 
 	width: 100%;

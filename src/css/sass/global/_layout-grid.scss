@@ -2,7 +2,7 @@
 // Builds column names based on global variable $grid-column-denominators
 
 // Grid wrapper
-.columns {
+.u-columns {
 	@extend %clearfix;
 
 	// Negative margin left, allows room for first column gutter
@@ -10,8 +10,8 @@
 }
 
 // Will match if any class on the element starts with "column-"
-[class*=" column-"],
-[class^="column-"] {
+[class*=" u-column-"],
+[class^="u-column-"] {
 	float: left;
 	width: 100%; // Default to full width
 
@@ -32,11 +32,11 @@
 	// For 1 to the current denominator (non-inclusive)
 	@for $numerator from 1 through ( $denominator - 1 ) { 
 
-		.column-#{ $numerator }-#{ $denominator } {
+		.u-column-#{ $numerator }-#{ $denominator } {
 			width: percentage( $numerator, $denominator )
 		}
 
-		.offset-#{ $numerator }-#{ $denominator } {
+		.u-offset-#{ $numerator }-#{ $denominator } {
 			margin-left: percentage( $numerator, $denominator )
 		}
 

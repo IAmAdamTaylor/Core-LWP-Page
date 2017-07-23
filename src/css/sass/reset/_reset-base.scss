@@ -19,6 +19,15 @@ a {
 	cursor: pointer;
 }
 
+// Reset SVG size and color by default to inherit
+svg {
+	width: 1em;
+	height: 1em;
+
+	fill: currentColor;
+	stroke: currentColor;
+}
+
 // Clearfix
 %clearfix,
 .clearfix {

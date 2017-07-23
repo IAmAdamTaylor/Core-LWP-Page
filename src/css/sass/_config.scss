@@ -13,13 +13,17 @@
 // 2-step Colour Scheme
 // Create variables with rgb()/hex code colours.
 // Then assign these to variables that represent specific parts of the interface.
-	$grey: rgb( 60, 60, 60 );
-	$blue: #2200CC;
+	$grey: rgb( 85, 88, 90 );
+	$blue: rgb( 141, 207, 215 );
 
 
 	$text-default-color: $grey;
+	
 	$link-default-color: $blue;
 	$link-hover-color: lighten( $link-default-color, 10% );
+	
+	$background-default-color: $grey;
+	$background-accent-color: $blue;
 
 
 // Typography
@@ -29,15 +33,16 @@
 	$sans-serif-fallback: "Soleil", "Avenir Next", "AvenirNext-SemiBold", "Futura-Medium", Futura, "Futura Std", "Droid Sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
 	$serif-fallback: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 
-	$body-stack: "WEBFONT", #{$sans-serif-fallback};
-	$heading-stack: #{$serif-fallback};
+	$body-stack: "Open Sans", #{$sans-serif-fallback};
+	$heading-stack: #{$body-stack};
 
 // Grid layout
 // Spacing multiples can be applied with the spacing() function.
-$spacing-unit: 15px;
+$spacing-unit: .5em;
+$default-spacing: $spacing-unit * 3;
 $grid-container-width: 1170px;
-$grid-column-denominators: 2, 3, 4;
-$grid-gutter: $spacing-unit * 2;
+$grid-column-denominators: 2;
+$grid-gutter: $default-spacing;
 
 
 // Third Party
