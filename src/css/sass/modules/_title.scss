@@ -1,0 +1,25 @@
+// Titles
+
+// Project wide titles
+%_o-title {
+	font-family: $heading-stack;
+	font-weight: 700;
+}
+
+.o-title {
+	@extend %_o-title;
+	
+	font-size: 2em;
+}
+
+.o-title-secondary {
+	@extend %_o-title;
+
+	font-size: 1.5em;
+}
+
+.o-title-tertiary {
+	@extend %_o-title;
+
+	font-size: 1.15em;
+}

@@ -1,0 +1,44 @@
+// Grid framework.
+// Builds column names based on global variable $grid-column-denominators
+
+// Grid wrapper
+.columns {
+	@extend %clearfix;
+
+	// Negative margin left, allows room for first column gutter
+	margin-left: -$grid-gutter;
+}
+
+// Will match if any class on the element starts with "column-"
+[class*=" column-"],
+[class^="column-"] {
+	float: left;
+	width: 100%; // Default to full width
+
+	margin-top: 0;
+	padding-left: $grid-gutter;
+
+	&.no-gutter {
+		padding-left: 0;
+	}
+}
+
+// Build columns grid based on $grid-column-denominators.
+// Creates classes such as:
+// 		column-1-2
+// 		column-2-3
+// For each denominator
+@each $denominator in $grid-column-denominators { 
+	// For 1 to the current denominator (non-inclusive)
+	@for $numerator from 1 through ( $denominator - 1 ) { 
+
+		.column-#{ $numerator }-#{ $denominator } {
+			width: percentage( $numerator, $denominator )
+		}
+
+		.offset-#{ $numerator }-#{ $denominator } {
+			margin-left: percentage( $numerator, $denominator )
+		}
+
+	}
+}

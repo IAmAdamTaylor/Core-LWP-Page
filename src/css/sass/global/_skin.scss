@@ -1,0 +1,19 @@
+// Global project styling, colors
+
+body {
+	color: $text-default-color;
+}
+
+// Inside article scope only, inline a tags should have color.
+.s-article-content {
+	p a {		
+		color: $link-default-color;
+
+		transition: .1s;
+
+		&:hover,
+		&:active { 
+			color: $link-hover-color;
+		}
+	}
+}
