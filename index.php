@@ -86,11 +86,11 @@
 						
 					</header>
 
-					<img class="u-block-image" src="public/images/main.jpg" alt="A view of Lynch Wood Park" width="1262" height="638">
+					<img class="u-block-image" src="public/images/main.jpg" alt="A view of Lynch Wood Park" width="1262" height="638" data-animate="fadeIn">
 
-					<p class="o-article__left-text u-text-emphasis">Lynch Wood Park offers variable floorplates suitable for a range of occupiers.</p>
+					<p class="o-article__left-text u-text-emphasis" data-animate="slideInLeft">Lynch Wood Park offers variable floorplates suitable for a range of occupiers.</p>
 
-					<p class="o-article__right-text">High specification office accommodation at an affordable price with a high car parking ratio while the tranquil green landscape, central location and growing onsite community provides businesses the opportunity to thrive.</p>
+					<p class="o-article__right-text" data-animate="slideInRight">High specification office accommodation at an affordable price with a high car parking ratio while the tranquil green landscape, central location and growing onsite community provides businesses the opportunity to thrive.</p>
 
 				</div>
 			</div>
@@ -105,7 +105,7 @@
 
 					<div class="u-columns">
 					
-						<div class="u-column u-column--1-2">
+						<div class="u-column u-column--1-2" data-animate="slideInLeft">
 							
 							<p class="u-text-emphasis u-spacing-top">Lynch Wood Park is ideally located in the heart of the UK, three miles west of Peterborough Town Centre.</p>
 							<p>With excellent connectivity via road and rail, as well as four international airports within an hour and a half.</p>
@@ -115,7 +115,7 @@
 
 						<div class="u-column u-column--1-2">
 							
-							<img class="u-block-image u-negative-spacing-top" src="public/images/map.png" alt="A map of the location of Lynch Wood Park" width="674" height="900">
+							<img class="u-block-image u-negative-spacing-top" src="public/images/map.png" alt="A map of the location of Lynch Wood Park" width="674" height="900" data-animate="fadeIn">
 
 						</div>
 
@@ -125,7 +125,7 @@
 			</section>
 
 			<div class="u-row">
-				<img class="u-block-image" src="public/images/banner.jpg" alt="A view of Lynch Wood Park" width="1706" height="763">
+				<img class="u-block-image" src="public/images/banner.jpg" alt="A view of Lynch Wood Park" width="1706" height="763" data-animate="fadeIn">
 			</div>
 
 			<section class="o-section o-section--dark o-section--pattern">
@@ -138,7 +138,7 @@
 
 					<div class="u-columns">
 						
-						<div class="u-column u-column--1-2">
+						<div class="u-column u-column--1-2" data-animate="slideInLeft">
 
 							<img class="u-block-image-max" src="public/images/savills-logo.png" alt="Savills Logo" width="155" height="155">
 
@@ -147,7 +147,7 @@
 							
 						</div>
 
-						<div class="u-column u-column--1-2">
+						<div class="u-column u-column--1-2" data-animate="slideInRight">
 
 							<img class="u-block-image-max" src="public/images/cushman-wakefield-logo.png" alt="Cushman &amp; Wakefield Logo" width="309" height="155">
 

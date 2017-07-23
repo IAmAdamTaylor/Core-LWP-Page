@@ -3,3 +3,12 @@
 body {
 	color: $text-default-color;
 }
+
+[data-animate="slideInLeft"],
+[data-animate="slideInLeft"] {
+	transition: 100ms linear;
+}
+
+[data-animate="slideInLeft"] {
+	transition: opacity 100ms linear;
+}
