@@ -1,0 +1,29 @@
+// Footer Component
+
+.c-footer {
+	padding: spacing(2) 0;
+	margin-top: 0;
+
+	font-size: .8em;
+}
+
+.c-footer__left,
+.c-footer__right {
+	margin-top: 0;
+}	
+	
+.c-footer__left {
+	float: left;
+}
+
+.c-footer__right {
+	float: right;
+
+	> a {
+		& + a {
+			margin-left: spacing();
+			border-left: 1px solid #ccc;
+			padding-left: spacing();
+		}
+	}
+}

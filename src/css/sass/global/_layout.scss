@@ -40,10 +40,25 @@ h6 {
 .u-container--wide {
 	max-width: 1140px;
 }
+.u-container--narrow {
+	max-width: 600px;
+}
 
 %row,
 .u-row {
 	@extend %clearfix;
 
 	width: 100%;
+}
+
+.u-no-spacing {
+	margin-top: 0;
+}
+
+.u-spacing-top {
+	margin-top: spacing(2);
+}
+
+.u-negative-spacing-top {
+	margin-top: spacing(-10);
 }

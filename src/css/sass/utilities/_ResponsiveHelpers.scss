@@ -19,3 +19,7 @@
     @content;
   }
 }
+
+@function em( $pixels ) {
+	@return $pixels / 16px * 1em;
+}

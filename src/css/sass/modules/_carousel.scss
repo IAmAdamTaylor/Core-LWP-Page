@@ -1,0 +1,16 @@
+// Carousel component
+
+.c-carousel {
+	margin-top: 0;
+}
+
+.c-carousel__slide {
+	display: none;
+
+	margin-top: 0;
+
+	&:first-child,
+	.slick-initialized & {
+		display: block;
+	}
+}

@@ -1,8 +1,12 @@
 // Block Sections
 
 .o-section {
-	padding: spacing(6) 0;
+	padding: spacing(4) 0 spacing(6);
 	margin-top: 0;
+
+	.o-title {
+		text-align: center;
+	}
 }
 
 .o-section--dark {
@@ -13,6 +17,6 @@
 .o-section--pattern {
 	background-image: image("pattern.jpg");
 	background-repeat: repeat-x;
-	background-position: -193px center;
+	background-position: 100px center;
 	background-size: auto 100%;
 }

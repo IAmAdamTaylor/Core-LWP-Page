@@ -40,14 +40,18 @@
 
 		<div class="c-header__content">
 			
-			<h1 class="c-header__title">
-				<b>Business</b><br>
-				brought<br>
-				to life
-			</h1>
-
-			<p>Up to 49,500 sq ft of premium office space available in Cambridgeshire</p>
+			<div class="u-container u-container--wide">
 			
+				<h1 class="c-header__title">
+					<b>Business</b><br>
+					brought<br>
+					to life
+				</h1>
+
+				<p>Up to 49,500 sq ft of premium office space available in Cambridgeshire</p>
+				
+			</div>
+
 		</div>
 
 		<div class="c-carousel" data-carousel>
@@ -56,11 +60,11 @@
 			</div>
 
 			<div class="c-carousel__slide">
-				<img class="u-block-image" src="public/images/carousel/1.jpg" alt="A view of Lynch Wood Park" width="" height="">
+				<img class="u-block-image" src="public/images/carousel/2.jpg" alt="A view of Lynch Wood Park" width="" height="">
 			</div>
 
 			<div class="c-carousel__slide">
-				<img class="u-block-image" src="public/images/carousel/1.jpg" alt="A view of Lynch Wood Park" width="" height="">
+				<img class="u-block-image" src="public/images/carousel/3.jpg" alt="A view of Lynch Wood Park" width="" height="">
 			</div>
 		</div>
 		
@@ -73,10 +77,9 @@
 			<div class="o-section o-section--dark">
 				<div class="u-container">
 
-				
 					<header>
 						
-						<h2 class="o-title-primary">
+						<h2 class="o-title o-title--primary">
 							Lynch Wood<br>
 							<b>Park</b>
 						</h2>
@@ -95,16 +98,16 @@
 			<section class="o-section" role="section">
 				<div class="u-container">
 
-					<h3 class="o-title-primary">
+					<h3 class="o-title o-title--primary">
 						Central<br>
-						Location
+						<b>Location</b>
 					</h3>
 
 					<div class="u-columns">
 					
 						<div class="u-column u-column--1-2">
 							
-							<p class="u-text-emphasis">Lynch Wood Park is ideally located in the heart of the UK, three miles west of Peterborough Town Centre.</p>
+							<p class="u-text-emphasis u-spacing-top">Lynch Wood Park is ideally located in the heart of the UK, three miles west of Peterborough Town Centre.</p>
 							<p>With excellent connectivity via road and rail, as well as four international airports within an hour and a half.</p>
 							<p>One of the fastest growing cities in the UK, Peterborough is also one of the most cost-effective business locations, ideal for start-ups, SMEs and leading companies alike.</p>
 							
@@ -112,7 +115,7 @@
 
 						<div class="u-column u-column--1-2">
 							
-							<img class="u-block-image" src="public/images/map.png" alt="A map of the location of Lynch Wood Park" width="" height="">
+							<img class="u-block-image u-negative-spacing-top" src="public/images/map.png" alt="A map of the location of Lynch Wood Park" width="" height="">
 
 						</div>
 
@@ -126,11 +129,11 @@
 			</div>
 
 			<section class="o-section o-section--dark o-section--pattern">
-				<div class="u-container">
+				<div class="u-container u-container--narrow">
 
-					<h3 class="o-title-primary">
+					<h3 class="o-title o-title--primary">
 						All<br>
-						Enquiries
+						<b>Enquiries</b>
 					</h3>
 
 					<div class="u-columns">
@@ -140,7 +143,7 @@
 							<img class="u-block-image-max" src="public/images/savills-logo.png" alt="Savills Logo" width="" height="">
 
 							<p>William Rose</p>
-							<p>01733 344414</p>
+							<p class="u-no-spacing">01733 344414</p>
 							
 						</div>
 
@@ -149,7 +152,7 @@
 							<img class="u-block-image-max" src="public/images/cushman-wakefield-logo.png" alt="Cushman &amp; Wakefield Logo" width="" height="">
 
 							<p>Andrew Berry</p>
-							<p>0121 200 2050</p>
+							<p class="u-no-spacing">0121 200 2050</p>
 							
 						</div>
 
@@ -173,14 +176,15 @@
 
 			<div class="c-footer__right">
 				
-				<a href="http://www.fi-rem.com/legals/">Privacy Policy</a>
-				<a href="http://www.core-marketing.co.uk/">Website by Core</a>
+				<a href="http://www.fi-rem.com/legals/">Privacy Policy</a><?php
+				?><a href="http://www.core-marketing.co.uk/">Website by Core</a>
 
 			</div>
 
 		</div>
 	</footer>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="public/js/footer.min.js"></script>
 
 </body>
