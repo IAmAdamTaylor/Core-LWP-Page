@@ -36,32 +36,6 @@ function windowHeight() {
   return $(window).height();
 }
 
-/**
- * Check if an x,y point is inside a rectangle on the screen.
- * @param  {object} point An object with point.x & point.y keys.
- * @param  {object} rect  An object with object.topLeft & object.bottomRight keys.
- *                        Each of these keys should also be a point object with point.x & point.y keys.
- * @return {boolean}      
- */
-function pointIsInsideRect( point, rect ) {
-  return( 
-    point.x >= rect.topLeft.x &&
-    point.x <= rect.bottomRight.x &&
-
-    point.y >= rect.topLeft.y &&
-    point.y <= rect.bottomRight.y
-  );
-}
-
-function isJsonString(str) {
-  try {
-    JSON.parse(str);
-  } catch (e) {
-    return false;
-  }
-  return true;
-}
-
 function throttle(fn, threshold, scope) {
   threshold = threshold || 250;
   var last,
