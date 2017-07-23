@@ -1,0 +1,18 @@
+// Block Sections
+
+.o-section {
+	padding: spacing(6) 0;
+	margin-top: 0;
+}
+
+.o-section--dark {
+	background-color: $background-default-color;
+	color: #fff;
+}
+
+.o-section--pattern {
+	background-image: image("pattern.jpg");
+	background-repeat: repeat-x;
+	background-position: -193px center;
+	background-size: auto 100%;
+}
