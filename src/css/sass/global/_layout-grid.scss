@@ -9,16 +9,14 @@
 	margin-left: -$grid-gutter;
 }
 
-// Will match if any class on the element starts with "column-"
-[class*=" u-column-"],
-[class^="u-column-"] {
+.u-column {
 	float: left;
 	width: 100%; // Default to full width
 
 	margin-top: 0;
 	padding-left: $grid-gutter;
 
-	&.no-gutter {
+	.u-columns.has-no-gutter > & {
 		padding-left: 0;
 	}
 }
@@ -32,11 +30,11 @@
 	// For 1 to the current denominator (non-inclusive)
 	@for $numerator from 1 through ( $denominator - 1 ) { 
 
-		.u-column-#{ $numerator }-#{ $denominator } {
+		.u-column--#{ $numerator }-#{ $denominator } {
 			width: percentage( $numerator, $denominator )
 		}
 
-		.u-offset-#{ $numerator }-#{ $denominator } {
+		.u-column-offset--#{ $numerator }-#{ $denominator } {
 			margin-left: percentage( $numerator, $denominator )
 		}
 
