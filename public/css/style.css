@@ -504,6 +504,10 @@ body {
   width: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   margin-top: 0;
   margin-bottom: 0;
@@ -541,18 +545,6 @@ h6 + p {
   width: 100%;
 }
 
-.u-no-spacing {
-  margin-top: 0;
-}
-
-.u-spacing-top {
-  margin-top: 1em;
-}
-
-.u-negative-spacing-top {
-  margin-top: -5em;
-}
-
 .u-columns {
   margin-left: -1.5em;
 }
@@ -573,6 +565,18 @@ h6 + p {
 
 .u-column-offset--1-2 {
   margin-left: 50%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .u-column--full\@900 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 32.5em) {
+  .u-column--full\@520 {
+    width: 100%;
+  }
 }
 
 .u-block-image {
@@ -616,8 +620,22 @@ h6 + p {
   padding-left: 3em;
 }
 
+@media only screen and (max-width: 51.875em) {
+  .o-article__left-text,
+  .o-article__right-text {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .c-carousel {
   margin-top: 0;
+}
+@media only screen and (max-width: 41.875em) {
+  .c-carousel {
+    display: none;
+  }
 }
 
 .c-carousel__slide {
@@ -628,10 +646,40 @@ h6 + p {
   display: block;
 }
 
+@media only screen and (max-width: 46.875em) {
+  .c-contact-item img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 100px;
+  }
+}
+@media only screen and (max-width: 32.5em) {
+  .c-contact-item img {
+    float: left;
+    max-width: 140px;
+    margin-right: 1.5em;
+  }
+  .c-contact-item img[src*="savills"] {
+    margin-right: 70px;
+  }
+  .c-contact-item p {
+    margin-top: 0;
+  }
+  .c-contact-item img[src*="cushman"] + p {
+    margin-top: 20px;
+  }
+}
+
 .c-footer {
   padding: 1em 0;
   margin-top: 0;
   font-size: .8em;
+}
+@media only screen and (max-width: 25em) {
+  .c-footer {
+    text-align: center;
+  }
 }
 
 .c-footer__left,
@@ -652,6 +700,19 @@ h6 + p {
   padding-left: 0.5em;
 }
 
+@media only screen and (max-width: 25em) {
+  .c-footer__left,
+  .c-footer__right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .c-footer__right {
+    margin-top: 0.5em;
+  }
+}
+
 .c-header {
   position: relative;
   z-index: 0;
@@ -669,19 +730,53 @@ h6 + p {
   color: #fff;
   font-size: 1.33em;
 }
+@media only screen and (max-width: 53.75em) {
+  .c-header__content {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 41.875em) {
+  .c-header__content {
+    position: relative;
+    padding: 1.5em 0;
+    background-color: #8dcfd7;
+    text-align: center;
+  }
+}
 .c-header__content > .u-container {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 20;
-  width: 100%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+@media only screen and (max-width: 41.875em) {
+  .c-header__content > .u-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
 .c-header__content p {
   max-width: 450px;
   margin-top: 1.5em;
+}
+@media only screen and (max-width: 53.75em) {
+  .c-header__content p {
+    max-width: 350px;
+    margin-top: 1em;
+  }
+}
+@media only screen and (max-width: 41.875em) {
+  .c-header__content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .c-header__content:before {
   content: "";
@@ -697,6 +792,11 @@ h6 + p {
       -ms-transform: translate(-72%, -60%) rotate(45deg);
           transform: translate(-72%, -60%) rotate(45deg);
 }
+@media only screen and (max-width: 41.875em) {
+  .c-header__content:before {
+    display: none;
+  }
+}
 
 .c-header__title {
   font-family: "Open Sans", Soleil, Avenir Next, AvenirNext-SemiBold, Futura-Medium, Futura, Futura Std, Droid Sans, Trebuchet MS, Helvetica, Arial, sans-serif;
@@ -707,6 +807,16 @@ h6 + p {
 .c-header__title b {
   font-weight: 800;
 }
+@media only screen and (max-width: 68.75em) {
+  .c-header__title {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (max-width: 60em) {
+  .c-header__title {
+    font-size: 2em;
+  }
+}
 
 .o-logo {
   float: left;
@@ -715,6 +825,11 @@ h6 + p {
   height: auto;
   max-height: 100px;
   margin: 1em 0;
+}
+@media only screen and (max-width: 27.5em) {
+  .o-logo {
+    max-height: 70px;
+  }
 }
 
 .o-logo--right {
@@ -750,13 +865,10 @@ h6 + p {
 .o-title--primary {
   font-size: 2.8em;
 }
-
-.o-title--secondary {
-  font-size: 2em;
-}
-
-.o-title--tertiary {
-  font-size: 1.4em;
+@media only screen and (max-width: 31.25em) {
+  .o-title--primary {
+    font-size: 2em;
+  }
 }
 
 /* Slider */
@@ -856,7 +968,7 @@ h6 + p {
   text-align: center;
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 95%;
   left: 50%;
   bottom: 30px;
   z-index: 100;
@@ -866,17 +978,24 @@ h6 + p {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+@media only screen and (max-width: 53.75em) {
+  .slick-dots {
+    bottom: 20px;
+  }
+}
 .slick-dots li {
   position: relative;
   display: inline-block;
   height: 20px;
   width: 20px;
-  margin: 0 5px;
   padding: 0;
   cursor: pointer;
   background-color: #fff;
   -webkit-transition: background-color .1s ease;
   transition: background-color .1s ease;
+}
+.slick-dots li + li {
+  margin-left: 10px;
 }
 .slick-dots li button {
   border: 0;
@@ -891,7 +1010,7 @@ h6 + p {
   padding: 5px;
   cursor: pointer;
 }
-.slick-dots li button:hover, .slick-dots li button:focus {
+.slick-dots li button:hover {
   outline: none;
   background-color: #888a8b;
 }
@@ -902,7 +1021,6 @@ h6 + p {
 /* Slider */
 .slick-slider {
   position: relative;
-  display: block;
   box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -989,6 +1107,29 @@ h6 + p {
 
 .u-hide {
   display: none !important;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .u-hide\@900 {
+    display: none !important;
+  }
+}
+
+.u-no-spacing {
+  margin-top: 0 !important;
+}
+
+.u-spacing-top {
+  margin-top: 1em !important;
+}
+
+.u-negative-spacing-top {
+  margin-top: -5em !important;
+}
+@media only screen and (max-width: 59.375em) {
+  .u-negative-spacing-top {
+    margin-top: -2em !important;
+  }
 }
 
 

@@ -7,6 +7,21 @@ if (!Array.isArray) {
   };
 }
 
+// mobile Safari reports wrong values on offset()
+// http://dev.jquery.com/ticket/6446
+if ( /webkit.*mobile/i.test(navigator.userAgent)) {
+  console.log( 'Running safari' );
+  (function($) {
+      $.fn.offsetOld = $.fn.offset;
+      $.fn.offset = function() {
+        var result = this.offsetOld();
+        result.top -= window.scrollY;
+        result.left -= window.scrollX;
+        return result;
+      };
+  })(jQuery);
+}
+
 /**
  * Get the true window width, without scrollbars.
  * @return integer The window width in px.
@@ -172,9 +187,9 @@ function debounce(func, wait, immediate) {
 		_.animation = animation;
 
 		// The amount the animation should be offset by
-		_.scrollOffset = 120;
+		_.scrollOffset = Math.max( windowWidth() * 0.1, 80 );
 
-		_._setInitial()._bindEvents();
+		_._setInitial()._bindEvents().requestAnimationFrame();
 	};
 
 	Animator.prototype._setInitial = function() {
@@ -210,13 +225,12 @@ function debounce(func, wait, immediate) {
 				elementTop = _.$element.offset().top,
 				elementBottom = elementTop + _.$element.outerHeight(),
 				scrollTop = $(window).scrollTop() - _.scrollOffset,
-				scrollBottom = scrollTop + windowHeight(),
+				scrollBottom,
 				percent = 0;
 
-		// Only animate once scrolling has started
-		if ( scrollTop > 0 ) {
-			percent = ( scrollBottom - elementTop ) / ( elementBottom - elementTop );
-		}
+		scrollTop = Math.max( 0, scrollTop );
+		scrollBottom = scrollTop + windowHeight();
+		percent = ( scrollBottom - elementTop ) / ( elementBottom - elementTop );
 
 		// Limit the percentage, between 0 and 1
 		percent = Math.max( 0, percent );
