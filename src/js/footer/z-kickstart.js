@@ -2,6 +2,10 @@
 
 ( function( $, window, document, undefined ) {
 	
+	/**
+	 * Initialise Slick carousel
+	 * @type {Object}
+	 */
 	var slickArgs = {
 		fade: true,
 		autoplay: true,
