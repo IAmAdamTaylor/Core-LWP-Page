@@ -486,6 +486,17 @@ body {
   color: #55585a;
 }
 
+[data-animate="slideInLeft"],
+[data-animate="slideInLeft"] {
+  -webkit-transition: 100ms linear;
+  transition: 100ms linear;
+}
+
+[data-animate="slideInLeft"] {
+  -webkit-transition: opacity 100ms linear;
+  transition: opacity 100ms linear;
+}
+
 html,
 body {
   margin: 0;
