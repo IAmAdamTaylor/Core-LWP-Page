@@ -36,6 +36,7 @@ var cwd = process.cwd(),
       toMove: [
         'src/fonts/**/*',
         'src/css/*.*',
+        'src/css/fonts/*.*',
         'src/svg/*.*'
       ]
     },
