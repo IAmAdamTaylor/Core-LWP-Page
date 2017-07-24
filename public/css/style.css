@@ -633,6 +633,10 @@ h6 + p {
 .c-carousel {
   margin-top: 0;
 }
+.ie9 .c-carousel {
+  position: relative;
+  z-index: 0;
+}
 @media only screen and (max-width: 41.875em) {
   .c-carousel {
     display: none;
@@ -716,7 +720,7 @@ h6 + p {
 
 .c-header {
   position: relative;
-  z-index: 0;
+  z-index: 1;
   margin-top: 0;
   overflow: hidden;
 }
@@ -873,6 +877,9 @@ h6 + p {
 }
 
 /* Slider */
+.slick-list {
+  z-index: 0;
+}
 .slick-loading .slick-list {
   background: #fff url("./ajax-loader.gif") center center no-repeat;
 }
@@ -978,6 +985,10 @@ h6 + p {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+.ie9 .slick-dots {
+  max-width: none;
+  text-align: right;
 }
 @media only screen and (max-width: 53.75em) {
   .slick-dots {

@@ -3,6 +3,11 @@
 .c-carousel {
 	margin-top: 0;
 
+	.ie9 & {
+		position: relative;
+		z-index: 0;
+	}
+
 	@include respond( em(670px) ) {
 		display: none;
 	}
