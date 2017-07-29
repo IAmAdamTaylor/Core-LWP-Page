@@ -31,6 +31,36 @@ if ( /webkit.*mobile/i.test(navigator.userAgent)) {
 	 */
 
 	/**
+	 * Define fade in animation
+	 */
+	var FadeIn = function( element ) {
+		var _ = this;
+
+		_.element = element;
+		_.duration = 1;
+		_.ease = Expo.easeInOut;
+	};
+
+	FadeIn.prototype.getTween = function() {
+		var _ = this;
+
+		return new TimelineMax().from(
+			_.element,
+			_.duration,
+			_.getOptions()
+		);
+	};
+
+	FadeIn.prototype.getOptions = function() {
+		var _ = this;
+
+		return {
+			opacity: 0,
+			ease: _.ease
+		};
+	};
+
+	/**
 	 * Define slide in from bottom animation
 	 */
 	var SlideInBottom = function( element ) {
@@ -51,6 +81,8 @@ if ( /webkit.*mobile/i.test(navigator.userAgent)) {
 	};
 
 	SlideInBottom.prototype.getOptions = function() {
+		var _ = this;
+
 		return {
 			opacity: 0,
 			y: "+=200"
@@ -122,6 +154,7 @@ if ( /webkit.*mobile/i.test(navigator.userAgent)) {
 
 	// Expose globally
 	window.ScrollMagicAnimations = {
+		FadeIn: FadeIn,
 		SlideInBottom: SlideInBottom,
 		SlideInLeft: SlideInLeft,
 		SlideInRight: SlideInRight
@@ -14224,6 +14257,10 @@ jQuery.extend( jQuery.easing,
 		}
 
 		switch ( type ) {
+			case 'fadeIn':
+				animation = new ScrollMagicAnimations.FadeIn( node );
+				break;
+
 			case 'slideInBottom':
 				animation = new ScrollMagicAnimations.SlideInBottom( node );
 				break;
