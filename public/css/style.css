@@ -637,7 +637,7 @@ h6 + p {
   position: relative;
   z-index: 0;
 }
-@media only screen and (max-width: 41.875em) {
+@media only screen and (max-width: 47.9375em) {
   .c-carousel {
     display: none;
   }
@@ -735,12 +735,17 @@ h6 + p {
   color: #fff;
   font-size: 1.33em;
 }
-@media only screen and (max-width: 53.75em) {
+@media only screen and (max-width: 63.9375em) {
+  .c-header__content {
+    font-size: 1.125em;
+  }
+}
+@media only screen and (max-width: 53.125em) {
   .c-header__content {
     font-size: 1em;
   }
 }
-@media only screen and (max-width: 41.875em) {
+@media only screen and (max-width: 47.9375em) {
   .c-header__content {
     position: relative;
     padding: 1.5em 0;
@@ -757,7 +762,7 @@ h6 + p {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-@media only screen and (max-width: 41.875em) {
+@media only screen and (max-width: 47.9375em) {
   .c-header__content > .u-container {
     position: relative;
     top: 0;
@@ -771,13 +776,13 @@ h6 + p {
   max-width: 450px;
   margin-top: 1.5em;
 }
-@media only screen and (max-width: 53.75em) {
+@media only screen and (max-width: 63.9375em) {
   .c-header__content p {
     max-width: 350px;
     margin-top: 1em;
   }
 }
-@media only screen and (max-width: 41.875em) {
+@media only screen and (max-width: 47.9375em) {
   .c-header__content p {
     margin-left: auto;
     margin-right: auto;
@@ -786,18 +791,22 @@ h6 + p {
 .c-header__content:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
   z-index: 11;
   display: block;
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
   background-color: #8dcfd7;
-  -webkit-transform: translate(-72%, -60%) rotate(45deg);
-      -ms-transform: translate(-72%, -60%) rotate(45deg);
-          transform: translate(-72%, -60%) rotate(45deg);
+  -webkit-transform: translate(-65%, -50%) rotate(45deg);
+      -ms-transform: translate(-65%, -50%) rotate(45deg);
+          transform: translate(-65%, -50%) rotate(45deg);
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
 }
-@media only screen and (max-width: 41.875em) {
+@media only screen and (max-width: 47.9375em) {
   .c-header__content:before {
     display: none;
   }
@@ -990,7 +999,7 @@ h6 + p {
   max-width: none;
   text-align: right;
 }
-@media only screen and (max-width: 53.75em) {
+@media only screen and (max-width: 60.3125em) {
   .slick-dots {
     bottom: 20px;
   }
