@@ -14,6 +14,36 @@
 	 */
 
 	/**
+	 * Define fade in animation
+	 */
+	var FadeIn = function( element ) {
+		var _ = this;
+
+		_.element = element;
+		_.duration = 1;
+		_.ease = Expo.easeInOut;
+	};
+
+	FadeIn.prototype.getTween = function() {
+		var _ = this;
+
+		return new TimelineMax().from(
+			_.element,
+			_.duration,
+			_.getOptions()
+		);
+	};
+
+	FadeIn.prototype.getOptions = function() {
+		var _ = this;
+
+		return {
+			opacity: 0,
+			ease: _.ease
+		};
+	};
+
+	/**
 	 * Define slide in from bottom animation
 	 */
 	var SlideInBottom = function( element ) {
@@ -34,6 +64,8 @@
 	};
 
 	SlideInBottom.prototype.getOptions = function() {
+		var _ = this;
+
 		return {
 			opacity: 0,
 			y: "+=200"
@@ -105,6 +137,7 @@
 
 	// Expose globally
 	window.ScrollMagicAnimations = {
+		FadeIn: FadeIn,
 		SlideInBottom: SlideInBottom,
 		SlideInLeft: SlideInLeft,
 		SlideInRight: SlideInRight

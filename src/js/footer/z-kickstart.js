@@ -39,6 +39,10 @@
 		}
 
 		switch ( type ) {
+			case 'fadeIn':
+				animation = new ScrollMagicAnimations.FadeIn( node );
+				break;
+
 			case 'slideInBottom':
 				animation = new ScrollMagicAnimations.SlideInBottom( node );
 				break;
