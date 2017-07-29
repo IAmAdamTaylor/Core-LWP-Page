@@ -1,2 +1,5 @@
 src/js/head/modernizr-custom.min.js
 src/js/footer/_slick.js
+src/js/footer/_jQuery.easing.js
+src/js/footer/_ScrollMagic.js
+src/js/footer/_TweenMax.js
