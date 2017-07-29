@@ -42,6 +42,8 @@ $slick-opacity-not-active: 0.25 !default;
 /* Slider */
 
 .slick-list {
+    z-index: 0;
+
     .slick-loading & {
         background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
     }
@@ -153,6 +155,11 @@ $slick-opacity-not-active: 0.25 !default;
     text-align: left;
     
     transform: translateX(-50%);
+
+    .ie9 & {
+        max-width: none;
+        text-align: right;
+    }
 
     @include respond( em(860px) ) {
         bottom: 20px;
