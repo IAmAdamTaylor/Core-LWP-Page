@@ -22,11 +22,15 @@
 
 	font-size: 1.33em;
 
-	@include respond( em(860px) ) {
+	@include respond( em(1023px) ) {
+		font-size: 1.125em;
+	}
+
+	@include respond( em(850px) ) {
 		font-size: 1em;
 	}
 
-	@include respond( em(670px) ) {
+	@include respond( em(767px) ) {
 		position: relative;
 
 		padding: spacing(3) 0;
@@ -44,7 +48,7 @@
 
 		transform: translate( -50%, -50% );
 
-		@include respond( em(670px) ) {
+		@include respond( em(767px) ) {
 			position: relative;
 			top: 0;
 			left: 0;
@@ -58,12 +62,12 @@
 
 		margin-top: spacing(3);
 
-		@include respond( em(860px) ) {
+		@include respond( em(1023px) ) {
 			max-width: 350px;
 			margin-top: spacing(2);
 		}
 
-		@include respond( em(670px) ) {
+		@include respond( em(767px) ) {
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -73,21 +77,23 @@
 		content: "";
 
 		position: absolute;
-		top: 0;
+		top: 50%;
 		left: 0;
 		z-index: 11;
 
 		display: block;
-		width: 200%;
-    height: 200%;
+		width: 100%;
+    height: 0;
+
+    padding-bottom: 100%;
 
 		background-color: $background-accent-color;
 
-		// Create a ratio to position the element
-		// based on the size of the container
-    transform: translate(-72%,-60%) rotate(45deg);
+		// Position slightly to the left more than right
+    transform: translate(-65%,-50%) rotate(45deg);
+    transform-origin: center center;
 
-		@include respond( em(670px) ) {
+		@include respond( em(767px) ) {
 			display: none;
 		}
 	}

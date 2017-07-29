@@ -8,7 +8,7 @@
 		z-index: 0;
 	}
 
-	@include respond( em(670px) ) {
+	@include respond( em(767px) ) {
 		display: none;
 	}
 }
